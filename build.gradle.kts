@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "dev.icerock"
-version = "0.8.0"
+version = "0.8.0-1.3.72"
 
 repositories {
     jcenter()
@@ -17,9 +17,8 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    compileOnly("com.android.tools.build:gradle:4.0.1")
-    compileOnly("org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10")
-    compileOnly("org.jetbrains.kotlin:kotlin-compiler-embeddable:1.4.10")
+    compileOnly("com.android.tools.build:gradle:3.6.1")
+    compileOnly("org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.72")
 }
 
 kotlinDslPluginOptions {
@@ -27,7 +26,7 @@ kotlinDslPluginOptions {
 }
 
 publishing {
-    repositories.maven("https://api.bintray.com/maven/icerockdev/plugins/mobile-multiplatform/;publish=1") {
+    repositories.maven("https://api.bintray.com/maven/stevesoltys/maven/mobile-multiplatform/;publish=1") {
         name = "bintray"
 
         credentials {
